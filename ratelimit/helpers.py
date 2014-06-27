@@ -12,9 +12,11 @@ _PERIODS = {
     'm': 60,
     'h': 60 * 60,
     'd': 24 * 60 * 60,
+    'w': 24 * 60 * 60 * 7,
+    'M': 24 * 60 * 60 * 30,
 }
 
-rate_re = re.compile('([\d]+)/([\d]*)([smhd])')
+rate_re = re.compile('([\d]+)/([\d]*)([smhdwM])')
 
 
 def _method_match(request, method=None):
