@@ -16,7 +16,7 @@ _PERIODS = {
     'o': 24 * 60 * 60 * 30,
 }
 
-rate_re = re.compile('([\d]+)/([\d]*)([smhdwM])')
+rate_re = re.compile('([\d]+)/([\d]*)([smhdwo])')
 
 
 def _method_match(request, method=None):
